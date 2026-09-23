@@ -8,7 +8,8 @@ author_profile: true
 {% include base_path %}
 
 <div class="course-list">
-{% for post in site.teaching %}
+{% assign courses = site.teaching | sort: "course_number" %}
+{% for post in courses %}
   <article class="archive__item course-item" itemscope itemtype="http://schema.org/Course">
     {% if post.sticker %}
       <a class="course-item__sticker" href="{% if post.link %}{{ post.link }}{% else %}{{ base_path }}{{ post.url }}{% endif %}" aria-hidden="true" tabindex="-1">
