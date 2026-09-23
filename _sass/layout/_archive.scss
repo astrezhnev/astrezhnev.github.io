@@ -243,3 +243,68 @@
     }
   }
 }
+
+/* ==========================================================================
+   COURSE LIST (teaching)
+   ========================================================================== */
+
+.course-list {
+  margin-top: 1em;
+}
+
+.course-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5em;
+  padding: 1.25em 0;
+
+  + .course-item {
+    border-top: 1px solid var(--global-border-color);
+  }
+}
+
+.course-item__sticker {
+  display: block; // an inline <a> would ignore the width once the row unstacks
+  flex: 0 0 auto;
+  width: 110px;
+  text-decoration: none !important;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.15s ease-in-out;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.course-item__body {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  .archive__item-title {
+    margin-top: 0;
+  }
+}
+
+.course-item__meta {
+  margin: 0 0 0.25em;
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+}
+
+/* Stack the sticker above the text on narrow screens */
+@media screen and (max-width: 600px) {
+  .course-item {
+    display: block;
+  }
+
+  .course-item__sticker {
+    width: 90px;
+    margin-bottom: 0.75em;
+  }
+}
