@@ -266,7 +266,7 @@
 .course-item__sticker {
   display: block; // an inline <a> would ignore the width once the row unstacks
   flex: 0 0 auto;
-  width: 110px;
+  width: 78px;
   text-decoration: none !important;
 
   img {
@@ -304,7 +304,7 @@
   }
 
   .course-item__sticker {
-    width: 90px;
+    width: 64px;
     margin-bottom: 0.75em;
   }
 }
