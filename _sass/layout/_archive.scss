@@ -248,14 +248,15 @@
    COURSE LIST (teaching)
    ========================================================================== */
 
+$course-sticker-width: 78px;
+$course-sticker-width-narrow: 64px;
+$course-sticker-gap: 1.25em;
+
 .course-list {
   margin-top: 1em;
 }
 
 .course-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5em;
   padding: 1.25em 0;
 
   + .course-item {
@@ -263,10 +264,22 @@
   }
 }
 
+/* Sticker and title share a row, so the sticker reads as a badge on the title */
+.course-item__head {
+  display: flex;
+  align-items: center;
+  gap: $course-sticker-gap;
+
+  .archive__item-title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .course-item__sticker {
   display: block; // an inline <a> would ignore the width once the row unstacks
   flex: 0 0 auto;
-  width: 78px;
+  width: $course-sticker-width;
   text-decoration: none !important;
 
   img {
@@ -281,30 +294,34 @@
   }
 }
 
+/* Keep the text lined up under the title rather than under the sticker */
 .course-item__body {
-  flex: 1 1 auto;
-  min-width: 0;
+  margin-left: calc(#{$course-sticker-width} + #{$course-sticker-gap});
 
-  .archive__item-title {
-    margin-top: 0;
+  &--flush {
+    margin-left: 0;
   }
 }
 
 .course-item__meta {
-  margin: 0 0 0.25em;
+  margin: 0.5em 0 0.25em;
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   color: var(--global-text-color-light);
 }
 
-/* Stack the sticker above the text on narrow screens */
+/* Stack the sticker above the title on narrow screens */
 @media screen and (max-width: 600px) {
-  .course-item {
+  .course-item__head {
     display: block;
   }
 
   .course-item__sticker {
-    width: 64px;
-    margin-bottom: 0.75em;
+    width: $course-sticker-width-narrow;
+    margin-bottom: 0.6em;
+  }
+
+  .course-item__body {
+    margin-left: 0;
   }
 }

@@ -11,13 +11,13 @@ author_profile: true
 {% assign courses = site.teaching | sort: "course_number" %}
 {% for post in courses %}
   <article class="archive__item course-item" itemscope itemtype="http://schema.org/Course">
-    {% if post.sticker %}
-      <a class="course-item__sticker" href="{% if post.link %}{{ post.link }}{% else %}{{ base_path }}{{ post.url }}{% endif %}" aria-hidden="true" tabindex="-1">
-        <img src="{{ base_path }}/images/{{ post.sticker }}"{% if post.sticker_2x %} srcset="{{ base_path }}/images/{{ post.sticker }} 1x, {{ base_path }}/images/{{ post.sticker_2x }} 2x"{% endif %} alt="">
-      </a>
-    {% endif %}
+    <div class="course-item__head">
+      {% if post.sticker %}
+        <a class="course-item__sticker" href="{% if post.link %}{{ post.link }}{% else %}{{ base_path }}{{ post.url }}{% endif %}" aria-hidden="true" tabindex="-1">
+          <img src="{{ base_path }}/images/{{ post.sticker }}"{% if post.sticker_2x %} srcset="{{ base_path }}/images/{{ post.sticker }} 1x, {{ base_path }}/images/{{ post.sticker_2x }} 2x"{% endif %} alt="">
+        </a>
+      {% endif %}
 
-    <div class="course-item__body">
       <h2 class="archive__item-title" itemprop="headline">
         {% if post.link %}
           <a href="{{ post.link }}">{{ post.title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -25,7 +25,9 @@ author_profile: true
           <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
         {% endif %}
       </h2>
+    </div>
 
+    <div class="course-item__body{% unless post.sticker %} course-item__body--flush{% endunless %}">
       <p class="course-item__meta">{{ post.type }}, <i>{{ post.venue }}</i>, {% if post.term %}{{ post.term }}{% else %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
 
       {% if post.excerpt %}
