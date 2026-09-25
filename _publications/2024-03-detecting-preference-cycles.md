@@ -1,12 +1,12 @@
 ---
-title: "Detecting Preference Cycles in Forced-Choice Conjoint Experiments"
+title: "Aggregation, Interpretation, and Estimation of Preferences in Conjoint Experiments"
 collection: publications
 category: workingpapers
 permalink: /publication/2024-detecting-preference-cycles
-excerpt: 'Conjoint experiments enable the measurement of preferences in complex, multidimensional choice settings. But the problem of how to aggregate over multiple dimensions to make substantively meaningful statements of the form "respondents typically prefer feature A to B" has not received a concise, systematic treatment in the literature. This paper provides a set of theoretical and statistical tools for understanding the behavior of conjoint estimands that do just that. Specifically, we focus on the choice of whether to target an estimand that includes indirect comparisons between two features in addition to direct comparisons. We show that although this permits researchers to incorporate more observed tasks in estimation, it can also raise problems of interpretability when indirect and direct comparisons diverge in sign and magnitude. We develop a novel set of statistical tools, which integrate easily with existing workflows, to guide practitioners in choosing the estimand that best suits their needs.'
+excerpt: 'Conjoint experiments are widely used to study preferences in multidimensional choice settings. Commonly reported estimands in this literature summarize a feature’s average performance against the full field of alternatives induced by the design, aggregating direct comparisons between the two feature levels of interest together with indirect comparisons involving other levels of the same attribute. Yet researchers’ substantive questions often concern binary preference relations — whether respondents prefer feature A to feature B. These are distinct quantities, and we show that they can diverge when there are preference cycles: a feature may perform better against the field while losing in the direct comparison. We introduce a new estimand, the average feature choice probability (AFCP), that directly targets the binary preference relation; decompose widely used estimands into weighted averages of such pairwise comparisons; and develop statistical tools that diagnose divergence between binary preference relations and “against-the-field” estimands.'
 date: 2024-10-01
 paperurl: 'https://osf.io/preprints/socarxiv/xjre9'
-citation: 'Abramson, Scott, Korhan Kocak, Asya Magazinnik, and Anton Strezhnev. &quot;Detecting Preference Cycles in Forced-Choice Conjoint Experiments.&quot; Working Paper.'
+citation: 'Abramson, Scott, Korhan Kocak, Asya Magazinnik, and Anton Strezhnev. &quot;Aggregation, Interpretation, and Estimation of Preferences in Conjoint Experiments.&quot; Working Paper.'
 ---
 
 [Download paper here](https://osf.io/preprints/socarxiv/xjre9)
