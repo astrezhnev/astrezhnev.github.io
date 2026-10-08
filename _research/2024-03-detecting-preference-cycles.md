@@ -13,5 +13,7 @@ coauthors: 'Scott Abramson, Korhan Kocak, and Asya Magazinnik'
 links:
   - label: 'paper'
     url: 'https://osf.io/preprints/socarxiv/xjre9'
+  - label: 'software'
+    url: '/software/afcp/'
 citation: 'Abramson, Scott, Korhan Kocak, Asya Magazinnik, and Anton Strezhnev. &quot;Aggregation, Interpretation, and Estimation of Preferences in Conjoint Experiments.&quot; Working Paper.'
 ---

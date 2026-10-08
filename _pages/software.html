@@ -7,7 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
+{% assign packages = site.software | sort: "order" %}
 
-{% for post in site.software %}
-  {% include archive-single.html %}
-{% endfor %}
+<ul class="pub-list">
+  {% for post in packages %}
+    {% include software-compact.html %}
+  {% endfor %}
+</ul>

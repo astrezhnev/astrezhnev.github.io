@@ -1,0 +1,18 @@
+{% include base_path %}
+
+<li class="pub-item" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+  <a class="pub-item__title" href="{{ base_path }}{{ post.url }}" itemprop="name">{{ post.title }}</a>
+
+  {% if post.excerpt %}
+    <div class="pub-item__summary" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+  {% endif %}
+
+  <div class="pub-item__venue">{{ post.language }}{% if post.availability %} · {{ post.availability }}{% endif %}</div>
+
+  <div class="pub-item__links">
+    {% for link in post.links %}
+      <a class="pub-item__link" href="{{ link.url }}">{{ link.label }}</a>
+    {% endfor %}
+    <a class="pub-item__link" href="{{ base_path }}{{ post.url }}">more info</a>
+  </div>
+</li>

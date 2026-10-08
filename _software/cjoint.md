@@ -1,17 +1,23 @@
 ---
-title: "cjoint R Package"
-excerpt: "An R package implementing the Average Marginal Component-specific Effects (AMCE) estimator for analyzing conjoint experiments."
+title: "cjoint"
 collection: software
+order: 2
+excerpt: "Estimates Average Marginal Component-specific Effects (AMCEs) for conjoint experiments, following Hainmueller, Hopkins and Yamamoto (2014), with tools for plotting and summarizing results."
+language: R
+availability: CRAN
+coauthors: 'Soubhik Barari, Elissa Berwick, Jens Hainmueller, Daniel Hopkins, Sean Liu, and Teppei Yamamoto'
+links:
+  - label: 'cran'
+    url: 'https://cran.r-project.org/package=cjoint'
+related:
+  - title: 'Hainmueller, Hopkins and Yamamoto (2014). "Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments." Political Analysis 22(1): 1-30.'
+    url: 'https://doi.org/10.1093/pan/mpt024'
 ---
 
-## cjoint: AMCE Estimator for Conjoint Experiments
+## Installation
 
-An R package implementing the Average Marginal Component-specific Effects (AMCE) estimator for analyzing conjoint experiments.
+```r
+install.packages("cjoint")
+```
 
-**Programming Language:** R
-
-**Installation:** Available via CRAN
-
-**CRAN Project Page:** [https://cran.r-project.org/web/packages/cjoint/index.html](https://cran.r-project.org/web/packages/cjoint/index.html)
-
-**Associated Publications:** Hainmueller, Hopkins & Yamamoto (2014). "Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices Via Stated Preference Experiments." *Political Analysis*, 22(1), 1-30.
+Designs created with the [Conjoint Survey Design Tool](/software/conjoint-survey-design-tool/) can be read directly into `cjoint` for analysis.
