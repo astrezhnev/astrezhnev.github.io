@@ -15,5 +15,7 @@ pages: '377-399'
 links:
   - label: 'publisher version'
     url: 'https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/rssa.12759'
+  - label: 'software'
+    url: 'https://github.com/mattblackwell/DirectEffects'
 citation: 'Blackwell, Matthew, and Anton Strezhnev. (2022). &quot;Telescope matching for reducing model dependence in the estimation of the effects of time‐varying treatments.&quot; <i>Journal of the Royal Statistical Society: Series A (Statistics in Society)</i>.'
 ---

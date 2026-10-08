@@ -15,5 +15,7 @@ pages: '42-58'
 links:
   - label: 'publisher version'
     url: 'https://www.cambridge.org/core/journals/political-analysis/article/an-improved-method-of-automated-nonparametric-content-analysis-for-social-science/D3C7441B17313F6E33A7BF2E781B5086'
+  - label: 'replication data'
+    url: 'https://doi.org/10.7910/DVN/AVNZR6'
 citation: 'Jerzak, Connor T., Gary King, and Anton Strezhnev. (2023). &quot;An improved method of automated nonparametric content analysis for social science.&quot; <i>Political Analysis</i>. 31(1): 42-58.'
 ---

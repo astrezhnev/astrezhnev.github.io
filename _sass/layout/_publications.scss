@@ -1,25 +1,12 @@
 /* ==========================================================================
-   PUBLICATION LIST (compact, two columns)
+   PUBLICATION LIST (compact)
    ========================================================================== */
 
-.pub-columns {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-areas: "working" "published";
-  gap: 0 2.5em;
+.pub-sections {
   margin-top: 1em;
-
-  /* Published work on the left, working papers on the right */
-  @include breakpoint($large) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-areas: "published working";
-  }
 }
 
-.pub-column--working { grid-area: working; }
-.pub-column--published { grid-area: published; }
-
-.pub-column__title {
+.pub-section__title {
   margin: 1em 0 0.25em;
   padding-bottom: 0.3em;
   font-family: $sans-serif-narrow;

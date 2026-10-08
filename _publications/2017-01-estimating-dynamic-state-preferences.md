@@ -15,5 +15,7 @@ pages: '430-456'
 links:
   - label: 'publisher version'
     url: 'http://journals.sagepub.com/doi/abs/10.1177/0022002715595700'
+  - label: 'ideal point data'
+    url: 'https://doi.org/10.7910/DVN/LEJUQZ'
 citation: 'Bailey, Michael A., Anton Strezhnev, and Erik Voeten. (2017). &quot;Estimating Dynamic State Preferences from United Nations Voting Data.&quot; <i>Journal of Conflict Resolution</i>. 61(2): 430-456.'
 ---

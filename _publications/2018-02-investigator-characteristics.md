@@ -15,5 +15,7 @@ pages: '1-12'
 links:
   - label: 'publisher version'
     url: 'https://doi.org/10.1017/xps.2017.25'
+  - label: 'replication data'
+    url: 'https://doi.org/10.7910/DVN/R8PNCP'
 citation: 'White, Ariel, Christopher Lucas, Dominika Kruszewska, Connor Huff, and Anton Strezhnev. (2018). &quot;Investigator Characteristics and Respondent Behavior in Online Surveys.&quot; <i>Journal of Experimental Political Science</i>. 5(1): 1-12.'
 ---

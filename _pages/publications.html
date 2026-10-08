@@ -9,9 +9,9 @@ author_profile: true
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 
-<div class="pub-columns">
-  <section class="pub-column pub-column--working">
-    <h2 class="pub-column__title">{{ site.publication_category.workingpapers.title }}</h2>
+<div class="pub-sections">
+  <section>
+    <h2 class="pub-section__title">{{ site.publication_category.workingpapers.title }}</h2>
     <ul class="pub-list">
       {% for post in pubs %}
         {% if post.category == 'workingpapers' %}{% include publication-compact.html %}{% endif %}
@@ -19,15 +19,15 @@ author_profile: true
     </ul>
   </section>
 
-  <section class="pub-column pub-column--published">
-    <h2 class="pub-column__title">{{ site.publication_category.articles.title }}</h2>
+  <section>
+    <h2 class="pub-section__title">{{ site.publication_category.articles.title }}</h2>
     <ul class="pub-list">
       {% for post in pubs %}
         {% if post.category == 'articles' %}{% include publication-compact.html %}{% endif %}
       {% endfor %}
     </ul>
 
-    <h2 class="pub-column__title">{{ site.publication_category.editedvolumes.title }}</h2>
+    <h2 class="pub-section__title">{{ site.publication_category.editedvolumes.title }}</h2>
     <ul class="pub-list">
       {% for post in pubs %}
         {% if post.category == 'editedvolumes' %}{% include publication-compact.html %}{% endif %}

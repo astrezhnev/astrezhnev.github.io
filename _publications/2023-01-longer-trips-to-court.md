@@ -17,5 +17,7 @@ links:
     url: 'https://www.pnas.org/doi/abs/10.1073/pnas.2210467120'
   - label: 'preprint'
     url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4130696'
+  - label: 'replication data'
+    url: 'https://doi.org/10.7910/DVN/WUXLF2'
 citation: 'Hoffman, David A., and Anton Strezhnev. (2023). &quot;Longer trips to court cause evictions.&quot; <i>Proceedings of the National Academy of Sciences</i>. 120(2).'
 ---

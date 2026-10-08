@@ -15,5 +15,7 @@ pages: '71-102'
 links:
   - label: 'publisher version'
     url: 'https://www.cambridge.org/core/journals/international-organization/article/abs/testing-for-negative-spillovers-is-promoting-human-rights-really-part-of-the-problem/29EC8C3115382CD70B85E49746C31D74'
+  - label: 'replication data'
+    url: 'https://doi.org/10.7910/DVN/1NTFKO'
 citation: 'Kelley, Judith, Beth A. Simmons, and Anton Strezhnev. (2021). &quot;Testing for Negative Spillovers: Is Promoting Human Rights Really Part of the &#39;Problem&#39;?&quot; <i>International Organization</i>. 75(1): 71-102.'
 ---
