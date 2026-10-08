@@ -1,17 +1,19 @@
 ---
 layout: archive
-title: "Publications"
-permalink: /publications/
+title: "Research"
+permalink: /research/
+redirect_from:
+  - /publications/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% assign pubs = site.publications | sort: "date" | reverse %}
+{% assign pubs = site.research | sort: "date" | reverse %}
 
 <div class="pub-sections">
   <section>
-    <h2 class="pub-section__title">{{ site.publication_category.workingpapers.title }}</h2>
+    <h2 class="pub-section__title">{{ site.research_category.workingpapers.title }}</h2>
     <ul class="pub-list">
       {% for post in pubs %}
         {% if post.category == 'workingpapers' %}{% include publication-compact.html %}{% endif %}
@@ -20,14 +22,14 @@ author_profile: true
   </section>
 
   <section>
-    <h2 class="pub-section__title">{{ site.publication_category.articles.title }}</h2>
+    <h2 class="pub-section__title">{{ site.research_category.articles.title }}</h2>
     <ul class="pub-list">
       {% for post in pubs %}
         {% if post.category == 'articles' %}{% include publication-compact.html %}{% endif %}
       {% endfor %}
     </ul>
 
-    <h2 class="pub-section__title">{{ site.publication_category.editedvolumes.title }}</h2>
+    <h2 class="pub-section__title">{{ site.research_category.editedvolumes.title }}</h2>
     <ul class="pub-list">
       {% for post in pubs %}
         {% if post.category == 'editedvolumes' %}{% include publication-compact.html %}{% endif %}

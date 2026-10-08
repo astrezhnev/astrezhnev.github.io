@@ -1,8 +1,10 @@
 ---
 title: "Human Rights and Human Welfare: Looking for a Dark Side to International Human Rights Law"
-collection: publications
+collection: research
 category: editedvolumes
-permalink: /publication/2017-human-rights-human-welfare
+permalink: /research/2017-human-rights-human-welfare
+redirect_from:
+  - /publication/2017-human-rights-human-welfare
 date: 2017-01-04
 venue: 'Human Rights Futures'
 authors: 'Beth A. Simmons and Anton Strezhnev'

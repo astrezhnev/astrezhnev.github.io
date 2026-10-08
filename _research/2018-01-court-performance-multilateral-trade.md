@@ -1,8 +1,10 @@
 ---
 title: "Court Performance within the Multilateral Trade Regime"
-collection: publications
+collection: research
 category: editedvolumes
-permalink: /publication/2018-court-performance-multilateral-trade
+permalink: /research/2018-court-performance-multilateral-trade
+redirect_from:
+  - /publication/2018-court-performance-multilateral-trade
 date: 2018-01-01
 venue: 'The Performance of International Courts and Tribunals'
 authors: 'Cosette D. Creamer and Anton Strezhnev'
