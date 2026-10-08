@@ -1,0 +1,32 @@
+{% include base_path %}
+{% assign pub_id = post.slug | default: post.url | slugify %}
+
+<li class="pub-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <a class="pub-item__title" href="{{ base_path }}{{ post.url }}" itemprop="headline">{{ post.title }}</a>
+
+  {% if post.authors %}
+    <div class="pub-item__authors" itemprop="author">{{ post.authors }}</div>
+  {% endif %}
+
+  {% if post.category == 'articles' and post.venue %}
+    <div class="pub-item__venue"><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</div>
+  {% elsif post.category == 'editedvolumes' and post.venue %}
+    <div class="pub-item__venue">In <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</div>
+  {% endif %}
+
+  <div class="pub-item__links">
+    {% if post.excerpt %}
+      <button type="button" class="pub-item__link pub-item__toggle" aria-expanded="false" aria-controls="abs-{{ pub_id }}">abstract</button>
+    {% endif %}
+    {% if post.paperurl %}
+      <a class="pub-item__link" href="{{ post.paperurl }}">paper</a>
+    {% endif %}
+    <a class="pub-item__link" href="{{ base_path }}{{ post.url }}">more info</a>
+  </div>
+
+  {% if post.excerpt %}
+    <div class="pub-item__abstract" id="abs-{{ pub_id }}" itemprop="abstract" hidden>
+      {{ post.excerpt | markdownify }}
+    </div>
+  {% endif %}
+</li>

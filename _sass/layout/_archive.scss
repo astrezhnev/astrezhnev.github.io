@@ -256,7 +256,13 @@ $course-sticker-gap: 1.25em;
   margin-top: 1em;
 }
 
+/* Sticker sits in its own column beside the text block (title, meta line,
+   excerpt), so the meta line follows the title directly instead of waiting
+   for the sticker's full height */
 .course-item {
+  display: flex;
+  align-items: center;
+  gap: $course-sticker-gap;
   padding: 1.25em 0;
 
   + .course-item {
@@ -264,20 +270,8 @@ $course-sticker-gap: 1.25em;
   }
 }
 
-/* Sticker and title share a row, so the sticker reads as a badge on the title */
-.course-item__head {
-  display: flex;
-  align-items: center;
-  gap: $course-sticker-gap;
-
-  .archive__item-title {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
 .course-item__sticker {
-  display: block; // an inline <a> would ignore the width once the row unstacks
+  display: block; // an inline <a> would ignore the width
   flex: 0 0 auto;
   width: $course-sticker-width;
   text-decoration: none !important;
@@ -294,34 +288,35 @@ $course-sticker-gap: 1.25em;
   }
 }
 
-/* Keep the text lined up under the title rather than under the sticker */
-.course-item__body {
-  margin-left: calc(#{$course-sticker-width} + #{$course-sticker-gap});
+.course-item__text {
+  flex: 1 1 auto;
+  min-width: 0; // let long titles wrap instead of overflowing the row
 
-  &--flush {
-    margin-left: 0;
+  .archive__item-title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .archive__item-excerpt {
+    margin-bottom: 0;
   }
 }
 
 .course-item__meta {
-  margin: 0.5em 0 0.25em;
+  margin: 0.3em 0 0.25em;
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   color: var(--global-text-color-light);
 }
 
-/* Stack the sticker above the title on narrow screens */
+/* Stack the sticker above the text on narrow screens */
 @media screen and (max-width: 600px) {
-  .course-item__head {
+  .course-item {
     display: block;
   }
 
   .course-item__sticker {
     width: $course-sticker-width-narrow;
     margin-bottom: 0.6em;
-  }
-
-  .course-item__body {
-    margin-left: 0;
   }
 }

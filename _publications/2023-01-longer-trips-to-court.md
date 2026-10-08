@@ -7,6 +7,7 @@ excerpt: 'Studying ∼200,000 evictions filed against ∼300,000 Philadelphians 
 date: 2023-01-01
 venue: 'Proceedings of the National Academy of Sciences'
 paperurl: 'https://www.pnas.org/doi/abs/10.1073/pnas.2210467120'
+authors: 'David A. Hoffman and Anton Strezhnev'
 citation: 'Hoffman, David A., and Anton Strezhnev. (2023). &quot;Longer trips to court cause evictions.&quot; <i>Proceedings of the National Academy of Sciences</i>. 120(2).'
 ---
 

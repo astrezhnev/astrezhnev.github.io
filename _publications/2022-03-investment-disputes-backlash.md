@@ -7,6 +7,7 @@ excerpt: 'This paper puts forth a theory explaining domestic backlash against in
 date: 2022-01-03
 venue: 'Journal of Conflict Resolution'
 paperurl: 'https://journals.sagepub.com/doi/pdf/10.1177/00220027221081925'
+authors: 'Ryan Brutger and Anton Strezhnev'
 citation: 'Brutger, Ryan, and Anton Strezhnev. (2022). &quot;International investment disputes, media coverage, and backlash against international law.&quot; <i>Journal of Conflict Resolution</i>. 66(6): 983-1009.'
 ---
 

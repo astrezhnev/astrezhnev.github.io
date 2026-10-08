@@ -7,6 +7,7 @@ excerpt: "One of the mechanisms by which international law can shape domestic po
 date: 2019-01-01
 venue: 'European Journal of International Law'
 paperurl: 'https://academic.oup.com/ejil/article-abstract/30/4/1281/5822848'
+authors: 'Beth A. Simmons, Matthew D. Kim, and Anton Strezhnev'
 citation: 'Simmons, Beth A., Matthew D. Kim, and Anton Strezhnev. (2019). &quot;Rulers or Rules? International Law, Elite Cues and Public Opinion.&quot; <i>European Journal of International Law</i>. 30(4): 1281-1302.'
 ---
 

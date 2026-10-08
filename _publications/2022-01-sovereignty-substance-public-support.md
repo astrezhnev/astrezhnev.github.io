@@ -7,5 +7,6 @@ excerpt: 'Is the public backlash against human rights rulings from European cour
 date: 2022-01-01
 venue: 'American Political Science Review'
 paperurl: 'https://www.cambridge.org/core/journals/american-political-science-review/article/sovereignty-substance-and-public-support-for-european-courts-human-rights-rulings/136F34C3EB3C9B477DD816372D12F79D'
+authors: 'Mikael Madsen, Juan Mayoral, Anton Strezhnev, and Erik Voeten'
 citation: 'Madsen, Mikael, Juan Mayoral, Anton Strezhnev, and Erik Voeten. (2022). &quot;Sovereignty, Substance, and Public Support for European Courts&#39; Human Rights Rulings.&quot; <i>American Political Science Review</i>. 116(2): 419-438.'
 ---
