@@ -17,12 +17,12 @@ layout: default
 
         <p class="pub-page__venue">
           {% assign year = page.date | date: "%Y" %}
-          {% if page.category == 'articles' %}
+          {% if page.editors %}
+            In <b>{{ page.venue }}</b>, edited by {{ page.editors }}.
+            {% if page.publisher %}{{ page.publisher }}{% endif %} ({{ year }}){% if page.pages %}: {{ page.pages }}{% endif %}
+          {% elsif page.category != 'workingpapers' %}
             <b>{{ page.venue }}</b>{% if page.volume %}, Vol. {{ page.volume }}{% endif %}{% if page.issue %}, No. {{ page.issue }}{% endif %}
             ({{ year }}){% if page.pages %}: {{ page.pages }}{% endif %}
-          {% elsif page.category == 'editedvolumes' %}
-            In <b>{{ page.venue }}</b>{% if page.editors %}, edited by {{ page.editors }}{% endif %}.
-            {% if page.publisher %}{{ page.publisher }}{% endif %} ({{ year }}){% if page.pages %}: {{ page.pages }}{% endif %}
           {% else %}
             <b>Working paper</b> ({{ year }})
           {% endif %}

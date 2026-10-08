@@ -8,10 +8,8 @@
     <div class="pub-item__authors" itemprop="author">{{ post.authors }}</div>
   {% endif %}
 
-  {% if post.category == 'articles' and post.venue %}
-    <div class="pub-item__venue"><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</div>
-  {% elsif post.category == 'editedvolumes' and post.venue %}
-    <div class="pub-item__venue">In <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</div>
+  {% if post.category != 'workingpapers' and post.venue %}
+    <div class="pub-item__venue">{% if post.editors %}In {% endif %}<i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</div>
   {% endif %}
 
   <div class="pub-item__links">
