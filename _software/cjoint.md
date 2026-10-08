@@ -9,6 +9,8 @@ coauthors: 'Soubhik Barari, Elissa Berwick, Jens Hainmueller, Daniel Hopkins, Se
 links:
   - label: 'cran'
     url: 'https://cran.r-project.org/package=cjoint'
+  - label: 'github'
+    url: 'https://github.com/astrezhnev/cjoint'
 related:
   - title: 'Hainmueller, Hopkins and Yamamoto (2014). "Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments." Political Analysis 22(1): 1-30.'
     url: 'https://doi.org/10.1093/pan/mpt024'
