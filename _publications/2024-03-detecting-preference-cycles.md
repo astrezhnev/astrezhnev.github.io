@@ -7,7 +7,9 @@ excerpt: 'Conjoint experiments are widely used to study preferences in multidime
 date: 2024-10-01
 paperurl: 'https://osf.io/preprints/socarxiv/xjre9'
 authors: 'Scott Abramson, Korhan Kocak, Asya Magazinnik, and Anton Strezhnev'
+coauthors: 'Scott Abramson, Korhan Kocak, and Asya Magazinnik'
+links:
+  - label: 'paper'
+    url: 'https://osf.io/preprints/socarxiv/xjre9'
 citation: 'Abramson, Scott, Korhan Kocak, Asya Magazinnik, and Anton Strezhnev. &quot;Aggregation, Interpretation, and Estimation of Preferences in Conjoint Experiments.&quot; Working Paper.'
 ---
-
-[Download paper here](https://osf.io/preprints/socarxiv/xjre9)

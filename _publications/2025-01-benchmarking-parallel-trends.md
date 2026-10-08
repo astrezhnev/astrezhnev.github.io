@@ -7,7 +7,9 @@ excerpt: 'Difference-in-differences (DiD) studies increasingly use regression im
 date: 2025-01-01
 paperurl: 'https://osf.io/preprints/socarxiv/ngr3d'
 authors: 'Zikai Li and Anton Strezhnev'
+coauthors: 'Zikai Li'
+links:
+  - label: 'paper'
+    url: 'https://osf.io/preprints/socarxiv/ngr3d'
 citation: 'Li, Zikai, and Anton Strezhnev. &quot;Benchmarking parallel trends violations in regression imputation difference-in-differences.&quot; Working Paper.'
 ---
-
-[Download paper here](https://osf.io/preprints/socarxiv/ngr3d)

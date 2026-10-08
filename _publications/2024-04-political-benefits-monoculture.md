@@ -8,9 +8,13 @@ date: 2026-09-01
 paperurl: 'https://doi.org/10.1016/j.jpubeco.2026.105742'
 authors: 'Bobby Gulotty and Anton Strezhnev'
 venue: 'Journal of Public Economics'
+coauthors: 'Bobby Gulotty'
+volume: '261'
+pages: '105742'
+links:
+  - label: 'publisher version'
+    url: 'https://doi.org/10.1016/j.jpubeco.2026.105742'
+  - label: 'working paper'
+    url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5223105'
 citation: 'Gulotty, Bobby, and Anton Strezhnev. (2026). &quot;The political benefits of the monoculture: Estimating the electoral effect of the market facilitation program.&quot; <i>Journal of Public Economics</i>. 261: 105742.'
 ---
-
-[Published version](https://doi.org/10.1016/j.jpubeco.2026.105742)
-
-[Working paper version (SSRN)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5223105)

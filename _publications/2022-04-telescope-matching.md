@@ -8,5 +8,12 @@ date: 2022-01-04
 venue: 'Journal of the Royal Statistical Society: Series A (Statistics in Society)'
 paperurl: 'https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/rssa.12759'
 authors: 'Matthew Blackwell and Anton Strezhnev'
+coauthors: 'Matthew Blackwell'
+volume: '185'
+issue: '1'
+pages: '377-399'
+links:
+  - label: 'publisher version'
+    url: 'https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/rssa.12759'
 citation: 'Blackwell, Matthew, and Anton Strezhnev. (2022). &quot;Telescope matching for reducing model dependence in the estimation of the effects of time‐varying treatments.&quot; <i>Journal of the Royal Statistical Society: Series A (Statistics in Society)</i>.'
 ---

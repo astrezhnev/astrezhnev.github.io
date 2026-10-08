@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page pub-page" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%Y" }}">{% endif %}
+
+    <div class="page__inner-wrap pub-page__grid">
+      <header class="pub-page__side">
+        <h1 class="pub-page__title" itemprop="headline">{{ page.title }}</h1>
+
+        <p class="pub-page__venue">
+          {% assign year = page.date | date: "%Y" %}
+          {% if page.category == 'articles' %}
+            <b>{{ page.venue }}</b>{% if page.volume %}, Vol. {{ page.volume }}{% endif %}{% if page.issue %}, No. {{ page.issue }}{% endif %}
+            ({{ year }}){% if page.pages %}: {{ page.pages }}{% endif %}
+          {% elsif page.category == 'editedvolumes' %}
+            In <b>{{ page.venue }}</b>{% if page.editors %}, edited by {{ page.editors }}{% endif %}.
+            {% if page.publisher %}{{ page.publisher }}{% endif %} ({{ year }}){% if page.pages %}: {{ page.pages }}{% endif %}
+          {% else %}
+            <b>Working paper</b> ({{ year }})
+          {% endif %}
+        </p>
+
+        {% if page.links %}
+          <ul class="pub-page__links">
+            {% for link in page.links %}
+              <li><a class="pub-item__link" href="{{ link.url }}">{{ link.label }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if page.image %}
+          <img class="pub-page__image" src="{{ base_path }}/images/{{ page.image }}" alt="{{ page.image_alt }}">
+        {% endif %}
+      </header>
+
+      <section class="page__content pub-page__main" itemprop="text">
+        {% if page.coauthors %}
+          <p class="pub-page__coauthors"><em>(with {{ page.coauthors | markdownify | remove: '<p>' | remove: '</p>' | strip }})</em></p>
+        {% endif %}
+
+        {% if page.excerpt %}
+          <div itemprop="abstract">{{ page.excerpt | markdownify }}</div>
+        {% endif %}
+
+        {{ content }}
+
+        {% if page.citation %}
+          <div class="pub-page__citation">
+            <h2>Citation</h2>
+            <p>{{ page.citation }}</p>
+          </div>
+        {% endif %}
+      </section>
+    </div>
+  </article>
+</div>

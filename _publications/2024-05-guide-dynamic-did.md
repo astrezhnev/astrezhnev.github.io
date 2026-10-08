@@ -7,7 +7,9 @@ excerpt: 'Difference-in-differences (DiD) designs for estimating causal effects 
 date: 2024-06-25
 paperurl: 'https://osf.io/preprints/socarxiv/kxw92'
 authors: 'Zikai Li and Anton Strezhnev'
+coauthors: 'Zikai Li'
+links:
+  - label: 'paper'
+    url: 'https://osf.io/preprints/socarxiv/kxw92'
 citation: 'Li, Zikai, and Anton Strezhnev. &quot;A Guide to Dynamic Difference-in-Differences Regressions for Political Scientists.&quot; Working Paper.'
 ---
-
-[Download paper here](https://osf.io/preprints/socarxiv/kxw92)

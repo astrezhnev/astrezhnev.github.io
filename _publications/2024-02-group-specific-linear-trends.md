@@ -7,9 +7,8 @@ excerpt: 'Differences-in-differences designs for estimating causal effects rely 
 date: 2024-01-02
 paperurl: 'https://osf.io/preprints/socarxiv/dg5ps'
 authors: 'Anton Strezhnev'
+links:
+  - label: 'paper'
+    url: 'https://osf.io/preprints/socarxiv/dg5ps'
 citation: 'Strezhnev, Anton. &quot;Group-specific linear trends and the triple-differences in time design.&quot; Working Paper.'
 ---
-
-[Download paper here](https://osf.io/preprints/socarxiv/dg5ps)
-
-[Replication archive](https://www.antonstrezhnev.com/s/Strezhnev_Group_Time_Trends_Replication.zip)

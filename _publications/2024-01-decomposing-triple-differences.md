@@ -7,7 +7,8 @@ excerpt: 'The triple-differences (TD) design is a popular identification strateg
 date: 2024-01-01
 paperurl: 'https://arxiv.org/abs/2307.02735'
 authors: 'Anton Strezhnev'
+links:
+  - label: 'paper'
+    url: 'https://arxiv.org/abs/2307.02735'
 citation: 'Strezhnev, Anton. &quot;Decomposing Triple-Differences Regression with Staggered Adoption.&quot; Working Paper.'
 ---
-
-[Download paper here](https://arxiv.org/abs/2307.02735)
